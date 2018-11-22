@@ -33,3 +33,10 @@ yum install libgpgme-dev libassuan-dev btrfs-progs libdevmapper-dev libostree-de
 cd $GOPATH/src/github.com/containers/skopeo && make binary-local
 mv $GOPATH/src/github.com/containers/skopeo/skopeo /usr/local/bin/
 ```
+
+
+### Reference
+
+* [skopeo Github repo](https://github.com/containers/skopeo)
+* [skopeo install](https://github.com/containers/skopeo/blob/master/README.md)
+* [skopeo create serviceaccount on openshift](https://github.com/nmasse-itix/OpenShift-Examples/tree/master/Using-Skopeo)

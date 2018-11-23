@@ -34,6 +34,14 @@ cd $GOPATH/src/github.com/containers/skopeo && make binary-local
 mv $GOPATH/src/github.com/containers/skopeo/skopeo /usr/local/bin/
 ```
 
+### Build Skopeo without network
+After downloading the zip from https://github.com/containers/skopeo
+```bash
+wget --no-check-certificate --no-proxy  https://mynexus.local/my-raw-repo/skopeo-master.zip
+mkdir -p $GOPATH/src/github.com/containers
+unzip skopeo-master.zip -d $GOPATH/src/github.com/containers/
+mv $GOPATH/src/github.com/containers/skopeo-master/ $GOPATH/src/github.com/containers/skopeo/
+```
 
 ### Reference
 

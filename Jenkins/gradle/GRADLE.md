@@ -11,6 +11,8 @@
 set GRADLE_USER_HOME to a folder for gradle (example: JENKINS_HOME/tools/gradle)  
 
 ## Repo Nexus
+init script reference: https://docs.gradle.org/current/userguide/init_scripts.html  
+
 Create init-script file in GRADLE_USER_HOME: "GRADLE_USER_HOME/init.d/init-script.gradle" :  
 
 ```

@@ -3,6 +3,8 @@
 ```bash
 hostnamectl set-hostname hostname_chosen
 hostnamectl status
+hostname -f    # fqdn
+hostname -d    # domain
 ```
 
 # hosts FILE

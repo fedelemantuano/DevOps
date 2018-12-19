@@ -4,9 +4,9 @@
 ### cat api
 
 ```bash
-GET /_cat/allocation?v
 GET /_cat/health?v
-GET /_cat/nodes
+GET /_cat/nodes?v
+GET /_cat/allocation?v
 GET /_cat/nodes?h=ip,port,heapPercent,name
 GET /_cat/indices/
 GET /_cat/master?v

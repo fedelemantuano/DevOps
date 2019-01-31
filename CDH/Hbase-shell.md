@@ -28,6 +28,6 @@ grant 'namespaceX_admin', 'RWXCA', '@<NAMESPACE_NAME>'  # to allow autonomy in a
 
 Revoke (help revoke):
 ```bash
-revoke 'admin'                                           # to admin with user admin (never needed, just an admin example)
-revoke 'namespaceX_admin', '@<NAMESPACE_NAME>'           # to allow autonomy in a namespace to a user
+revoke 'admin'                                           # tu revoke all global permissions to user admin
+revoke 'namespaceX_admin', '@<NAMESPACE_NAME>'           # tu revoke all permissions on namespace to user namespaceX_admin
 ```

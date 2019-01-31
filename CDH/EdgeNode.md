@@ -3,6 +3,7 @@
 * <PID> is the process PID of the instance and can be found in CM selecting instances -> chose an instance -> processes (in stdout is compleatili defined)
 * <HBASE_MASTER_HOST> is the host on which the master runs
 * <KERBEROS_DOMAIN> domain of kerberized cloudera
+* <SOLR_HOST> a solr server host
   
   
 ### Client Configuration retrieval
@@ -26,6 +27,6 @@ hbase shell
 
 ```sh
 su - solr -s /bin/bash
-scp root@<HBASE_MASTER_HOST>:/run/cloudera-scm-agent/process/<PID>-solr-SOLR_SERVER/solr.keytab . # Only first Time
-kinit -k -t solr.keytab solr/<HBASE_MASTER_HOST>@<KERBEROS_DOMAIN>
+scp root@<SOLR_HOST>:/run/cloudera-scm-agent/process/<PID>-solr-SOLR_SERVER/solr.keytab . # Only first Time
+kinit -k -t solr.keytab solr/<SOLR_HOST>@<KERBEROS_DOMAIN>
 ```

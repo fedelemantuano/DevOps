@@ -1,16 +1,18 @@
 # Log management in CDH
 
 # Audit Logs
-in community verion CM does not allow rolling management of audit logs. For this reason, if CDH is secured, there is the need to delete the audit logs manually
-
+In community version (Express) CM does not allow rolling size management of audit logs. For this reason, if CDH is secured, there is the need to delete the audit logs manually or it will grow indefinitely.
 
 # CM Firehose
 
 * Host Monitor Storage Directory  firehose.storage.base.directory /var/lib/cloudera-host-monitor (./ts)  
 * Service Monitor Storage Directory  firehose.storage.base.directory /var/lib/cloudera-service-monitor (./ts)  
 
-Time-Series Storage firehose_time_series_storage_bytes  10 GB
-best practice is to move it from /var/lib to /var/log or /data editing the firehose.storage.base.directory in CM configuration (for both services)
+Time-Series Storage firehose_time_series_storage_bytes  10 GB  
+Minimum 10GB is imposed by CM: what to do if you don't have it?
+
+## Best Practice:
+best practice is to move it from /var/lib to /var/log or /data (usually on other volumes with more space) editing the firehose.storage.base.directory in CM configuration (for both services).  
 
 ## Fast n Dirty:
 ```bash

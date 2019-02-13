@@ -17,7 +17,8 @@ DELETE /index_name
 DELETE /index_pattern*
 ```
 
-### list, explain, (fix and) restart shard allocation
+### UNASSIGNED SHARDs
+list, explain, (fix and) restart shard allocation:  
 
 ```http
 GET /_cat/shards?h=index,shard,prirep,state,unassigned.reason  # List UNASSIGNED indexes

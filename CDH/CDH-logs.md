@@ -6,8 +6,11 @@ in community verion CM does not allow rolling management of audit logs. For this
 
 # CM Firehose
 
-Host Monitor Storage Directory  firehose.storage.base.directory /var/lib/cloudera-host-monitor (./ts)  
+* Host Monitor Storage Directory  firehose.storage.base.directory /var/lib/cloudera-host-monitor (./ts)  
+* Service Monitor Storage Directory  firehose.storage.base.directory /var/lib/cloudera-service-monitor (./ts)  
+
 Time-Series Storage firehose_time_series_storage_bytes  10 GB
+best practice is to move it from /var/lib to /var/log or /data editing the firehose.storage.base.directory in CM configuration (for both services)
 
 ## Fast n Dirty:
 ```bash

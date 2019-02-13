@@ -1,5 +1,9 @@
 # Log management in CDH
 
+# Audit Logs
+in community verion CM does not allow rolling management of audit logs. For this reason, if CDH is secured, there is the need to delete the audit logs manually
+
+
 # CM Firehose
 
 Host Monitor Storage Directory  firehose.storage.base.directory /var/lib/cloudera-host-monitor (./ts)  

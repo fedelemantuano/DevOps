@@ -1,4 +1,4 @@
-/# Disk space
+# Disk space
 
 ```bash
 df -h                 # free space

@@ -19,3 +19,10 @@ ssh-keygen -t rsa -b 4096 -f .ssh/id_rsa_XYZ
 mv ./<exec> /usr/local/bin/
 chmod 755 /usr/local/bin/<exec>
 ```
+
+# System Info
+
+```bash
+less /proc/cpuinfo      # CPU INFO
+free -m (-m MB, -g GB)  # RAM INFO
+```

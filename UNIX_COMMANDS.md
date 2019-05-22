@@ -26,3 +26,9 @@ chmod 755 /usr/local/bin/<exec>
 less /proc/cpuinfo      # CPU INFO
 free -m (-m MB, -g GB)  # RAM INFO
 ```
+
+# Find Files
+
+```bash
+find / -name <FILE_NAME_EXPR> 2>&1 | grep -v "Permission denied"
+```

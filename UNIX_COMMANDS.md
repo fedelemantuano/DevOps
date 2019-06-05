@@ -83,5 +83,5 @@ unzip <zip_file_name>
 # Curl
 
 ```bash
-curl -v -k -u <USERNAME:PASSWORD> --upload-file <file_to_upload> <URL> or <URL>/<file_to_upload_new_name>   #Upload File
+curl --noproxy "*" -v -k -u <USERNAME:PASSWORD> --upload-file <file_to_upload> <URL> or <URL>/<file_to_upload_new_name>   #Upload File
 ```

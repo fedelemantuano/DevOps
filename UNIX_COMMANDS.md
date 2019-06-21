@@ -24,7 +24,11 @@ chmod 755 /usr/local/bin/<exec>
 
 ```bash
 less /proc/cpuinfo      # CPU INFO
+less /proc/meminfo      # RAM INFO
 free -m (-m MB, -g GB)  # RAM INFO
+df -h
+cat /proc/cpuinfo | grep processor
+cat /proc/meminfo | grep MemTotal
 ```
 
 # Find Files

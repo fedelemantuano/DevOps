@@ -33,6 +33,11 @@ free -m (-m MB, -g GB)  # RAM INFO
 find / -name <FILE_NAME_EXPR> 2>&1 | grep -v "Permission denied"
 ```
 
+# Grep 
+```bash
+grep -rnw /<path>/ -e '<expr>' # find text in files
+```
+
 # Zip/Unzip Files
 
 ```bash

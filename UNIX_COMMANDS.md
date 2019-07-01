@@ -94,3 +94,10 @@ unzip <zip_file_name>
 ```bash
 curl --noproxy "*" -v -k -u <USERNAME:PASSWORD> --upload-file <file_to_upload> <URL> or <URL>/<file_to_upload_new_name>   #Upload File
 ```
+
+# Check remote open ports
+
+```bash
+echo > /dev/tcp/<ip>/<port> && echo "Port is open"
+telnet <ip/dns> <port>
+```

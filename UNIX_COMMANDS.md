@@ -13,7 +13,7 @@ ssh-keygen -t rsa -b 4096 -f .ssh/id_rsa_XYZ
 ```
 
 
-# install executables
+# Install executables
 
 ```bash
 mv ./<exec> /usr/local/bin/
@@ -39,6 +39,11 @@ find / -name <FILE_NAME_EXPR> 2>&1 | grep -v "Permission denied"
 
 # Grep 
 ```bash
+# -r, --recursive           like --directories=recurse  (-R follows symlink)
+# -n, --line-number         print line number with output lines 
+# -v, --invert-match        select non-matching lines
+# -w, --word-regexp         force PATTERN to match only whole words
+# -e, --regexp=PATTERN      use PATTERN for matching
 grep -rnw /<path>/ -e '<expr>' # find text in files
 ```
 

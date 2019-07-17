@@ -7,12 +7,17 @@
 <AWX_HOST>/api/v2/                             # AWX API root URL
 <AWX_HOST>/api/v2/job_templates/               # job list
 <AWX_HOST>/api/v2/job_templates/${id}/launch/  # job launch with POST
-# Example
+# Example job submit
 curl -X POST -H "Content-type: application/json" \
     -u <USER>:<PASS> --noproxy '*' \
-    http://<AWX_HOST>/api/v2/job_templates/${id}/launch/
+    "http://<AWX_HOST>/api/v2/job_templates/${id}/launch/"
+# Example list api endpoints
+curl -X POST -H "Content-type: application/json" \
+    -u <USER>:<PASS> --noproxy '*' \
+    "http://<AWX_HOST>/api/v2/"
 ```
 
+#### Job Submit Script
 ```bash
 #!/bin/sh
 

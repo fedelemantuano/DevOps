@@ -109,3 +109,11 @@ telnet <ip/dns> <port>
 #Local Ports
 netstat -tulpn | grep LISTEN
 ```
+
+# Encode/Decode base64 strings
+
+```bash
+base64 <<< "secretstring"             # Encode
+base64 -d <<< "c2VjcmV0c3RyaW5nCg=="  # Decode
+```
+

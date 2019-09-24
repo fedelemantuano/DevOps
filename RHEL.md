@@ -19,3 +19,10 @@ ip          fqdn   short
 ip          fqdn   short
 ...
 ```
+
+# Timezones
+```bash
+timedatectl                                 # Current Time and settings
+timedatectl list-timezones | grep Europe    # Avaiable Timezones
+timedatectl set-timezone Europe/Rome        # Set Timezone
+```

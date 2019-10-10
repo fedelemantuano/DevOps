@@ -117,3 +117,14 @@ base64 <<< "secretstring"             # Encode
 base64 -d <<< "c2VjcmV0c3RyaW5nCg=="  # Decode
 ```
 
+# List files
+
+```bash
+ls          # tabbed list
+ls -l       # list with details
+ls -h       # list with human redable sizes
+ls -a       # list including hidden files and folders
+ls -t       # order by lastmodified datetime
+ls -rt      # order by lastmodified datetime in reverse
+ls -larth   # all of the above
+```

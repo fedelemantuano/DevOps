@@ -18,3 +18,14 @@ Modify the vagrant file to include the provisioning step that will add the key t
         sudo cat /home/vagrant/.ssh/authorized_keys_new > /root/.ssh/authorized_keys
       EOC
       
+## WSL Notes  (Windows Subsystem for Linux)
+
+Install the vagrant software in the WSL too (after having installed on windows) and set this env var to tell vagrant inside WSL to use Virtualbox in Windows:
+
+    export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+
+make sure to create the file /etc/wsl.conf and past thi inside:
+
+    [automount]
+    enabled = true
+    options = "metadata,umask=0022,fmask=0022"

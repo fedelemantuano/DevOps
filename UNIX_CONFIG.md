@@ -8,7 +8,8 @@ example:
     set nocompatible  # Arrows don't print letters in insert mode
     set backspace=2
     set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
-    
+    set noautoindent
+    set paste
     
 # SSH
 

@@ -44,3 +44,23 @@ cUrl:
 ```bash
 curl -u user:password -k -XPUT -H "Content-Type: application/json" https://<ES_HOST>:9200/_all/_settings -d '{"index.blocks.read_only_allow_delete": null}'
 ```
+
+### Disable/enable shard allocation
+
+```http
+# Disable
+PUT _cluster/settings
+{
+  "persistent": {
+    "cluster.routing.allocation.enable": "primaries"
+  }
+}
+
+# Enable
+PUT _cluster/settings
+{
+  "persistent": {
+    "cluster.routing.allocation.enable": null
+  }
+}
+```

@@ -128,3 +128,10 @@ ls -t       # order by lastmodified datetime
 ls -rt      # order by lastmodified datetime in reverse
 ls -larth   # all of the above
 ```
+
+# top
+
+```bash
+E          # cycles between Kb/Mb/Gb/..
+shift + m  # order by mem
+```

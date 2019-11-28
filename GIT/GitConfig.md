@@ -22,7 +22,7 @@
         sslverify = false
 
 
-### Git Config file priority
+### Git Config file locations priority
 
     /etc/gitconfig		# system
     ~/.config/git/config	# global

@@ -24,3 +24,23 @@ example:
     Host 192.168.0.*
         IdentityFile ~/.ssh/id_rsa_private
       
+# ENV VARS
+
+## /etc/environment
+
+    vi /etc/environment
+
+works only with programs compiled with PAM, to list supported executable launch:
+    
+    grep -l pam_env /etc/pam.d/*
+
+Only export var=value lines
+
+## /etc/profile.d/\*.sh
+
+    vi /etc/profile.d/file.sh
+    
+POSIX standard, executes/evaluates the script file at bash login
+
+
+    

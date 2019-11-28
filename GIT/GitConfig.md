@@ -2,6 +2,7 @@
 
 ### Config List
     git config --list --global --show-origin
+    git config --list --system --show-origin
     git config  --list --local --show-origin
 
 ### SSL no verify 
@@ -10,12 +11,22 @@
  
 ### Git Config file
     [user]
-	    name = <Name Surname>
-	    email = <mymail@gmail.com>
+	name = <Name Surname>
+	email = <mymail@gmail.com>
         username = <nickname>
-    [http "<matching url>"]
-        proxy = <url>
-        sslverify = false
     [http]
         proxy = <url>
         sslverify = true
+    [http "<matching url>"]
+        proxy = <url>
+        sslverify = false
+
+
+### Git Config file priority
+
+    /etc/gitconfig		# system
+    ~/.config/git/config	# global
+    ~/.gitconfig		# global
+    ./.git/config		# local
+    
+    

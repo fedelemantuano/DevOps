@@ -26,3 +26,18 @@ timedatectl                                 # Current Time and settings
 timedatectl list-timezones | grep Europe    # Avaiable Timezones
 timedatectl set-timezone Europe/Rome        # Set Timezone
 ```
+
+# Repos and subscription manager
+
+## Proxy subscription manager
+```bash
+# edits /etc/rhsm/rhsm.conf
+subscription-manager config --server.proxy_hostname=proxy.example.com --server.proxy_port=8080 --server.proxy_user=admin --server.proxy_password=secret
+```
+
+## enable repos
+```bash
+subscription-manager repos --enable rhel-7-server-extras-rpms     
+subscription-manager repos --enable rhel-7-server-optional-rpms   
+subscription-manager repos --enable rhel-7-server-rpms
+```

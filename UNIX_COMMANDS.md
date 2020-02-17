@@ -105,6 +105,7 @@ curl --noproxy "*" -v -k -u <USERNAME:PASSWORD> --upload-file <file_to_upload> <
 ```bash
 #Remote Ports
 echo > /dev/tcp/<ip>/<port> && echo "Port is open"
+</dev/tcp/<ip>/<port> && echo "Port is open" || echo "Port is closed"
 telnet <ip/dns> <port>
 #Local Ports
 netstat -tulpn | grep LISTEN

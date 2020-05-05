@@ -1,6 +1,7 @@
 # Openshift cli
 
-GitHub repo: [openshift/origin](https://github.com/openshift/origin/releases)
+GitHub repo: [openshift/origin](https://github.com/openshift/origin/releases)  
+Site: [OKD](https://www.okd.io/download.html)
 
 ## Install oc cli
 

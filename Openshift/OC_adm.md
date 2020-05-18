@@ -4,6 +4,7 @@
 
     oc get nodes
     oc describe node <node-name>
+    oc get events --sort-by='.lastTimestamp' --all-namespaces
 
 
 ## Delete all evicted pods in openshift

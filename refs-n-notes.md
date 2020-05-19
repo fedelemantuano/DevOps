@@ -1,7 +1,7 @@
 # DevOps References
 
-[https://cd.foundation/](https://cd.foundation/)
-[]()
+[Continuous Delivery Foundation](https://cd.foundation/)
+[CNCF Cloud Native Computer Foundation](https://www.cncf.io/) [CNCF Landscape](https://landscape.cncf.io/)  
 
 
 ## Spinnaker

@@ -16,3 +16,12 @@ chmod 755 /usr/local/bin/kubectl
 rm -f openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit.tar.gz
 rm -rf openshift-origin-client-tools-v3.11.0-0cbc58b-linux-64bit
 ```
+
+## cli completion
+
+    source <(oc completion bash)
+    source <(oc completion zsh)
+    
+    oc completion bash > oc_completion.sh
+    # In .bashrc
+    source oc_completion.sh

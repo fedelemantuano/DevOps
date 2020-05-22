@@ -1,7 +1,7 @@
 # Minishift
 
 ## Minishift commands
-    minishift setup-cdk  # creates $USER_HOME\.minishift
+    minishift setup-cdk                         # creates $USER_HOME\.minishift
     minishift start/stop
     minishift console --url # to get the openshift console url 
     ### start debug
@@ -14,7 +14,7 @@
     minishift config set vm-driver virtualbox
 
     ### delete
-    minishift delete -f     # to remove the generated VM in $USER_HOME\.minishift
+    minishift delete -f                         # to remove the generated VM in $USER_HOME\.minishift
     minishift delete --force --clear-cache      # to remove the generated VM and all $USER_HOME\.minishift
 
 ## shell (as minikube)

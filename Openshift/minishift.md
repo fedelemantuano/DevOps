@@ -9,7 +9,7 @@
 
     ### config hyper-v
     minishift config set hyperv-virtual-switch "ExtNet"
-    minishift config set vm-driver 
+    minishift config set vm-driver hyperv
     ### config virtualbox
     minishift config set vm-driver virtualbox 
 

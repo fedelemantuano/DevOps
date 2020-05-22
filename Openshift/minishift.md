@@ -11,7 +11,7 @@
     minishift config set hyperv-virtual-switch "ExtNet"
     minishift config set vm-driver hyperv
     ### config virtualbox
-    minishift config set vm-driver virtualbox 
+    minishift config set vm-driver virtualbox
 
     ### delete
     minishift delete -f     # to remove the generated VM in $USER_HOME\.minishift
@@ -22,3 +22,16 @@
     pass: tcuser
     # switch to root:
     # sudo su
+
+## errors
+    
+#### Check release FAIL
+    > minishift start
+    — Starting profile ‘minishift’
+    — Check if deprecated options are used … OK
+    — Checking if https://mirror.openshift.com is reachable … OK
+    — Checking if requested OpenShift version ‘v3.11.43’ is valid … FAIL
+    
+    minishift config set skip-check-openshift-release true
+    
+    

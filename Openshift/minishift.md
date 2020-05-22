@@ -23,15 +23,15 @@
     # switch to root:
     # sudo su
 
-## errors
+## COMMON ERRORS
     
 #### Check release FAIL
-    > minishift start
-    — Starting profile ‘minishift’
-    — Check if deprecated options are used … OK
-    — Checking if https://mirror.openshift.com is reachable … OK
-    — Checking if requested OpenShift version ‘v3.11.43’ is valid … FAIL
-    
+    C:\Users\Unknown>minishift start
+    -- Starting profile 'minishift'
+    -- Check if deprecated options are used ... OK
+    -- Checking if https://mirror.openshift.com is reachable ... OK
+    -- Checking if requested OpenShift version 'v3.11.43' is valid ... FAIL
+    # FIX
     minishift config set skip-check-openshift-release true
     
     

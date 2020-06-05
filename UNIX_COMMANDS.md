@@ -136,3 +136,12 @@ ls -larth   # all of the above
 E          # cycles between Kb/Mb/Gb/..
 shift + m  # order by mem
 ```
+
+# update ownership
+
+```bash
+# by UID
+find / -uid 1050 -exec chown newuser:newgroup {} +
+# by username
+find / -user john -exec chown newuser:newgroup {} +
+```

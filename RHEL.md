@@ -40,4 +40,8 @@ subscription-manager config --server.proxy_hostname=proxy.example.com --server.p
 subscription-manager repos --enable rhel-7-server-extras-rpms     
 subscription-manager repos --enable rhel-7-server-optional-rpms   
 subscription-manager repos --enable rhel-7-server-rpms
+# For AWS:
+sudo yum-config-manager --enable rhui-REGION-rhel-server-extras
+#For Azure:
+sudo yum-config-manager --enable rhui-rhel-7-server-rhui-extras-rpms
 ```

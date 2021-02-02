@@ -2,6 +2,7 @@
   
     vi ~/.vimrc                             # per user
     vi /etc/vimrc or /etc/vim/vimrc.local   # global
+    vi /etc/vim/vimrc.tiny                  # global for Debian
     # NOTE: /etc/vim/vimrc refers to /etc/vim/vimrc.local and should not be edited
 example:  
 

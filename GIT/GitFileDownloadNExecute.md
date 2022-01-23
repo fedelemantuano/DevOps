@@ -1,5 +1,11 @@
 # Git File Download and Execute
 
+## download from a public repo (must use API)
+
+bash <(curl -s http://mywebsite.com/myscript.txt)
+
+## download from a private repo (must use API)
+
 ```bash
 #!/usr/bin/env bash
 
@@ -13,4 +19,11 @@ curl --header "Authorization: token $TOKEN" \
      --header 'Accept: application/vnd.github.v3.raw' \
      --remote-name \
      --location $FILE_PATH
+```
+
+
+
+## Make executable
+```bash
+git ls-files "*.sh" | xargs git update-index --add --chmod=+x
 ```
